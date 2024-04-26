@@ -1,0 +1,41 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-04-03 19:31:55.692171",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "minimum_cost_for_person"
+ ],
+ "fields": [
+  {
+   "fieldname": "minimum_cost_for_person",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Minimum cost for petrol"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2024-04-08 16:23:58.849688",
+ "modified_by": "Administrator",
+ "module": "Ride Management system",
+ "name": "Ride Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

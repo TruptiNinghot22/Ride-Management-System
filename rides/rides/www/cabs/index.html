@@ -1,0 +1,24 @@
+{% extends "templates/base.html" %}
+{% block title %} {{ _("Trupti Cab Vehicles") }} {% endblock %}
+{% block content %}
+
+<div class="container">
+    <h2>
+        {{ _("Trupti Cab Vehicles") }}
+    </h2>
+    <div class="mt-28">
+        {% for vehicle in cabs %}
+            <div class="mb-8">
+                <h5> {{ vehicle.make }} </h5>
+                <div> {{ _("Model") }}; {{ vehicle.model }} {{ _("purchased in year") }}; <b>
+                    {{ vehicle.year }}
+                </b></div>
+            </div>
+        {% endfor %}
+    </div>
+    <a class="btn btn-primary btn-nd mt-8" href="ride-order/new">
+        {{ _("Book a Ride") }}
+    </a>
+</div>
+
+{% endblock %}
